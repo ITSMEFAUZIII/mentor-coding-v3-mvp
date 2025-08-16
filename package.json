@@ -4,17 +4,17 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev": "node ./node_modules/vite/bin/vite.js",
+    "build": "node ./node_modules/vite/bin/vite.js build",
+    "preview": "node ./node_modules/vite/bin/vite.js preview",
     "lint": "eslint ."
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
+    "@tanstack/react-query": "^5.56.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
-    "@tanstack/react-query": "^5.56.2",
     "zustand": "^4.5.5"
   },
   "devDependencies": {
@@ -23,5 +23,8 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.7",
     "vite": "^5.4.2"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
